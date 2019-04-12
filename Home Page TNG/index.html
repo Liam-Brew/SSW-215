@@ -1,0 +1,203 @@
+<!--Liam Brew
+	1/31/19
+	SSW 215A
+	"I pledge my honor that I have abided by the Stevens Honor System" -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Web Page</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js"></script>
+</head>
+<body>
+	<div class="flair_change_buttons">
+		<!-- Changes the flair color of the site -->
+		<p>Click here to change the color of the site's flair: 
+			<span>
+				<button onclick="changeFlair('red')">Red</button>
+				<button onclick="changeFlair('blue')">Blue</button>
+				<button onclick="changeFlair('green')">Green</button>
+			</span>
+		</p> 
+		
+		
+	</div>
+	
+	<div class="posts-section">
+	<!-- I styled this site as one would a blog, with each post representing a 
+		 distinct section of content from last week's initial rendition of the 
+		 assignment. I tried to make this as similar to the standard blog site as 
+		 possible, with posts in descending order from most to least recent. Buttons
+		 at the bottom of each post exist to navigate to either the previous or next 
+		 one, though their implementation would be better served on a website with 
+		 multiple pages. -->
+		<div class="post">
+			<!-- This represents a standard blog post: mostly text with a picture or 
+				 two present. Here I was testing my alignment rules as well as the 
+				 appearance of large test-blocks. -->
+			<div class="post_header">
+				<!-- A post's date and title will be stored in its header for ease of
+					 organization. -->
+				<p class="date" id="introduction_date">January 31, 2019</p>	
+				<h2 class="post_title" id="introduction">Introduction</h2>	
+			</div>
+			<div class="post_body">
+				<!-- The main content of the post. -->
+				<div class="pic_container">
+					<img class="pic" id="profile_pic" src="https://media.licdn.com/dms/image/C4D03AQEm1wwhJLSm6g/profile-displayphoto-shrink_200_200/0?e=1553731200&v=beta&t=GURE60zzXI2dT2BNX8yr7dqaHxokLvwNIDVxKyLAcQw">							
+					<div class="pic_change_buttons">
+						<!-- Click here to change between pictures of me and my dog Jethro!!! -->
+						<p>Click here to switch between me and my dog: 
+							<span>
+								<button onclick="changePicture('https://media.licdn.com/dms/image/C4D03AQEm1wwhJLSm6g/profile-displayphoto-shrink_200_200/0?e=1553731200&v=beta&t=GURE60zzXI2dT2BNX8yr7dqaHxokLvwNIDVxKyLAcQw')">Me</button>	
+								<button onclick="changePicture('https://preview.redd.it/57omnmybl1i11.jpg?width=576&auto=webp&s=f01fc4dee9b699444c1fa1f2d20d2c21151f38e1')">My Dog Jethro</button>			
+							</span>
+						</p>
+					</div>
+				</div>					
+				<p class="text">Hello! My name is Liam Brew. I am a sophmore Software Engineering student here at Stevens and am taking SSW 215. I am very excited for this course as I am interested in web development and would like to one day create and host my own website. I'm looking forward to a great semester!</p>			
+				<p class="text">I attended West Hempstead High School in West Hempstead, New York and graduated in 2017. In high school, I always enjoyed my STEM classes the most, with Calculus, Geometry and Physics being my favorites. In addition to these, I also took a leading role in two extracurriculars, my school's VEX Robotics Team and scientific research program. I believe that it is this combination of experiences, all of which were positive, which encouraged me to look further into a career into a career in Engineering.</p>
+				<p class="text">Although it may be a lot of hard work, I am definitely enjoying my Stevens experience so far. Not only have I learned alot, I've met an awesome group of like-minded people who share many similar interests with me. These people represent not only the start of my professional network but also life-long friends and fellow "survivors" of Stevens. In addition to my classes, I am involved in several extracurriculars, most notable of which are the Software Engineering Club and C2GS.</p>
+				<p class="text">This assignment allowed me to experiment with something that I have been planning for a while: a blog website. By incorporating the content from the initial rendition of my homepage as well as adding a little more (such as the two previous paragraphs), I played around with creating a uniform style for similar to how posts of a blog tend to look the same. I used classes to allow for better organization in addition to potential future post-submission scripting.</p>
+			</div>
+			<hr class="hrPost">
+				<!-- Pretty thematic break.  -->
+			<div class="post_navigation">
+				<!-- Navigation buttons. Since this is the most recent post only older 
+					 posts can be accesed. -->
+				<a class="passive" href="#skills_date"><button class="previous_post">Previous Post</button></a>
+			</div>
+		</div>
+
+		<div class="post">
+			<!-- In this post I tested my quotation style. I based this
+				 off of reddit's quote system. To test it I used my skill
+				 list. -->
+			<div class="post_header">
+				<p class="date" id="skills_date">January 29, 2019</p>
+				<h2 class="post_title" id="skills">My Skills</h2>
+			</div>
+			<div class="post_body">
+				<p class="text">As a software engineering student, I tend to focus on gaining academic, industry and research experience in the fields of software, computer science and project management. Not only does this make me a better potential hiree, but I am also interested in these topics and wish to learn more about them for personal gain. While I am by no means an expert, I would say that I do have some experience in the following topics:</p>
+				<div class="quote">
+					<ul>
+						<li>Languages (in order from most to least proficient)</li>
+							<ol>
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>Python</li>
+								<li>Bash</li>
+								<li>Java</li>
+							</ol>
+						<li>Hacking</li>
+							<ul>
+								<li>HackRF</li>
+								<li>Penetration Testing</li>
+								<li>Packet Sniffing</li>
+								<li>SQL Injection</li>
+							</ul>
+						<li>Operating Systems</li>
+							<ul>
+								<li>Windows 10/8/7/Vista/XP</li>
+								<li>Linux</li>
+									<ul>
+										<li>Raspbian</li>
+										<li>Kali</li>
+									</ul>
+							</ul>
+					</ul>
+				</div>
+				<p class="text">I defined the style above that display my skills as a quote. I based this style off of Reddit's quoting system, wherein a commenter can respond to an individual component of the original post. This snippet of text is pasted in the comment for the convenience of other readers, with a lighter text color seperating it from the commenter's original thoughts.</p>
+			</div>
+			<hr class="hrPost">	
+			<div class="post_navigation">
+				<a class="passive" href="#introduction_date"><button class="next_post">Next Post</button></a>
+				<a class="passive" href="#transcript_date"><button class="previous_post">Previous Post</button></a>
+			</div>
+		</div>
+
+		<div class="post">
+			<!-- In this post I tested my implementation of tables. I was 
+				 going for a formal-esque look that I can use whenever I 
+				 want to publish semi-professional work, such as a post dedicated
+				 to the woes of Engineering Design IV. -->
+			<div class="post_header">
+				<p class="date" id="transcript_date">January 6, 2019</p>
+				<h2 class="post_title" id="transcript">My Transcript</h2>
+			</div>
+			<div class="post_body">
+				<p class="text">I am currently enrolled in my fourth semester here at Stevens. While SSW 215 represents my first true software engineering course, I have taken before classes that deal both with technical skills such as coding as well as more "softer" skills such as project management. I value both of these sets of experience equally, as I am interested in the programming proportion of software engineering just as much as I am its leadership and mission-oriented design components. Located below you will find a list of courses which I found relevant to software engineering, each with my grade recieved and number of credits earned.</p>
+				<table class="transcript" onmouseover="highlightTable('yellow')" onmouseout="highlightTable('lightgrey')">
+					<THEAD>
+						<tr>
+							<!-- Class-based CSS >>>>>>>> Inline :( -->
+							<th class="interior_header">Course</th>
+							<th class="interior_header">Code</th>
+							<th class="interior_header">Grade</th>							
+							<th class="right_header">Credits</th>
+						</tr>
+					</THEAD>
+					<TBODY>
+						<tr>
+							<td class="interior_td">Introduction to Programming</td>
+							<td class="interior_td">E-115</td>
+							<td class="interior_td">A</td>
+							<td class="right_td">2</td>
+						</tr>
+						<tr>
+							<td class="interior_td">Introduction to Computer Science</td>
+							<td class="interior_td">CS-115</td>
+							<td class="interior_td">A-</td>
+							<td class="right_td">4</td>
+						</tr>
+						<tr>
+							<td class="interior_td">Engineering Design I</td>
+							<td class="interior_td">E-121</td>
+							<td class="interior_td">A</td>
+							<td class="right_td">2</td>
+						</tr>
+						<tr>
+							<td class="interior_td_bottom">Engineering Design II</td>
+							<td class="interior_td_bottom">E-122</td>
+							<td class="interior_td_bottom">A</td>
+							<td>2</td>
+						</tr>
+					</TBODY>
+				</table>
+				<p class="text">This represents the default style that I would like to apply to any tables or figures in my blog. Feature prominently in the center of the post yet with formal-esque color, background and border, I wish to give my blog a sense of professionalism whilist still remaining easy to read and exciting enough to follow.</p>
+				<hr class="hrPost">	
+				<div class="post_navigation">
+					<a class="passive" href="#skills_date"><button class="next_post">Next Post</button></a>
+					<a class="passive" href="#contact_me_date"><button class="previous_post">Previous Post</button></a>
+				</div>
+			</div>
+		</div>	
+		
+		<div class="post">
+			<!-- This post I dedicated towards testing the appearance and 
+				 functionality of image-based embedded links. The Gmail option
+				 should open the user's default email app and prepare an email to
+				 my Stevens account. -->
+			<div class="post_header">
+				<p class="date" id="contact_me_date">December 29, 2019</p>
+				<h2 class="post_title" id="contact_me">Contact Me</h2>
+			</div>
+			<div class="post_body">
+				<div class="pic_container">
+					<a href="https://www.linkedin.com/in/liam-brew-66946214b/" target="blank"><img class="contact_icon" src="http://www.jacobusconsulting.com/wp-content/uploads/2017/03/linkedin-logo-copy.png" alt=""></a>
+					<a href="mailto:lbrew@stevens.edu" target="blank"><img class="contact_icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/New_Logo_Gmail.svg/512px-New_Logo_Gmail.svg.png" alt=""></a>				
+				</div>
+				<p class="text">Since I do not partake in social media, the best way to contact me is through either direct mail to my Stevens Gmail account or through a direct message on my LinkedIn profile. I am usually able to respond to my email faster, but LinkedIn is a great way to both get to know eachother more and stay in contact. Links to my two accounts are accessible by clicking the respective icons located above.</p>
+				<hr class="hrPost">	
+				<div class="post_navigation">
+					<a class="passive" href="#transcript_date"><button class="next_post">Next Post</button></a>
+				</div>
+			</div>
+		</div>	
+		<button onclick="mostRecent()">Most Recent Post</button>	
+	</div>
+	
+
+</body>
+</html>
