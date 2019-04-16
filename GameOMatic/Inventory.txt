@@ -1,0 +1,62 @@
+Welcome Gandalf! 
+Gandalf has joined the game with {'food': 5, 'grapefruit': 10, 'green potions': 7, 'red potions': 8, 'spells of enchantment': 10}! 
+
+Welcome Frodo! 
+Frodo has joined the game with {'food': 0, 'kiwi': 5, 'wands of confusion': 7, 'green potions': 8}! 
+
+Welcome Sauron! 
+Sauron has joined the game with {'bat wings': 5, 'evil spells': 10, 'fire wands': 5}! 
+
+Welcome Bilbo! 
+Bilbo has joined the game with {'food': 0, 'kiwi': 5, 'wands of confusion': 7, 'green potions': 8}! 
+
+Adding 1 food to Gandalf's inventory... 
+Gandalf's number of food increased by 1! 
+Gandalf's inventory is now {'food': 6, 'grapefruit': 10, 'green potions': 7, 'red potions': 8, 'spells of enchantment': 10}. 
+
+Adding 1 green potions to Frodo's inventory... 
+Frodo's number of green potions increased by 1! 
+Frodo's inventory is now {'food': 0, 'kiwi': 5, 'wands of confusion': 7, 'green potions': 9}. 
+
+Adding 1 evil spells to Sauron's inventory... 
+Sauron's number of evil spells increased by 1! 
+Sauron's inventory is now {'bat wings': 5, 'evil spells': 11, 'fire wands': 5}. 
+
+Adding 1 Shadowfax to Gandalf's inventory... 
+Gandalf's number of Shadowfax increased by 1! 
+Gandalf's inventory is now {'food': 6, 'grapefruit': 10, 'green potions': 7, 'red potions': 8, 'spells of enchantment': 10, 'Shadowfax': 1}. 
+
+Adding 1 Coat of Mithril Maille to Frodo's inventory... 
+Frodo's number of Coat of Mithril Maille increased by 1! 
+Frodo's inventory is now {'food': 0, 'kiwi': 5, 'wands of confusion': 7, 'green potions': 9, 'Coat of Mithril Maille': 1}. 
+
+Adding 1 Ring of Power to Sauron's inventory... 
+Sauron's number of Ring of Power increased by 1! 
+Sauron's inventory is now {'bat wings': 5, 'evil spells': 11, 'fire wands': 5, 'Ring of Power': 1}. 
+
+Removing 7 food from Gandalf's inventory... 
+Error: can't remove 7 food as Gandalf only has 6 of them. 
+Gandalf's inventory is now {'food': 6, 'grapefruit': 10, 'green potions': 7, 'red potions': 8, 'spells of enchantment': 10, 'Shadowfax': 1}.
+
+Removing 1 food from Frodo's inventory... 
+Error: can't remove 1 food as Frodo only has 0 of them. 
+Frodo's inventory is now {'food': 0, 'kiwi': 5, 'wands of confusion': 7, 'green potions': 9, 'Coat of Mithril Maille': 1}.
+
+Removing 11 evil spells from Sauron's inventory... 
+Removed 11 evil spells from Sauron's inventory. 
+Sauron's inventory is now {'bat wings': 5, 'evil spells': 0, 'fire wands': 5, 'Ring of Power': 1}. 
+Warning: Sauron has 0 evil spells remaining. 
+
+
+Removing 1 Great Eagle from Gandalf's inventory... 
+Error: cannot remove Great Eagle from Gandalf's inventory as they have none in the first place. 
+
+
+Removing 1 Sting from Frodo's inventory... 
+Error: cannot remove Sting from Frodo's inventory as they have none in the first place. 
+
+
+Removing 100 Nazgul from Sauron's inventory... 
+Error: cannot remove Nazgul from Sauron's inventory as they have none in the first place. 
+
+
